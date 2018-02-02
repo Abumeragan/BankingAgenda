@@ -61,7 +61,6 @@ public class BankController {
 		model.addObject(b);
 		return model;
 	}
-	
-	
+		
 	
 }
