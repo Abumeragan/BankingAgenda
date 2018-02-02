@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity(name = "bank")
 public class Bank {
@@ -14,6 +15,7 @@ public class Bank {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idBank;
 	private String name;
+	@Transient
 	private List<Account> Accounts;
 
 	public Bank() {

@@ -1,11 +1,9 @@
 package com.BankingAgenda.model.DAO;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.BankingAgenda.model.Account;
 
-@Repository
-public interface AccountDAO extends CrudRepository<Account, Long> {
+public interface AccountDAO extends JpaRepository<Account, Long> {
 	
 }
