@@ -4,7 +4,7 @@
 <link href="../static/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" th:href="@{/css/bootstrap.min.css}" />
 
-<title>MyStore -- Product Detail</title>
+<title>Banking Agenda - Bank Detail</title>
 </head>
 <body>
 
@@ -14,9 +14,9 @@
 				<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
 						<span class="sr-only"></span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="product/list" th:href="@{/product/list}">WS - List all
-						products<span class="sr-only"></span>
+				<li class="nav-item"><a class="nav-link" href="bank/list"
+					th:href="@{/bank/list}">REST - List all banks<span
+						class="sr-only"></span>
 				</a></li>
 
 			</ul>
@@ -33,7 +33,7 @@
 
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-2">MyStore - Product Detail</h1>
+			<h1 class="display-2">Banking Agenda - Bank Detail</h1>
 		</div>
 	</div>
 
@@ -45,20 +45,14 @@
 			<div class="col-md-4">
 				<h2>NAME</h2>
 			</div>
-			<div class="col-md-4">
-				<h2>DATE</h2>
-			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-4">
-				<p th:text="${products.id}"></p>
+				<p th:text="${bank.idBank}"></p>
 			</div>
 			<div class="col-md-4">
-				<p th:text="${products.name}"></p>
-			</div>
-			<div class="col-md-4">
-				<p th:text="${products.date}"></p>
+				<p th:text="${bank.name}"></p>
 			</div>
 		</div>
 		<a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)"
