@@ -65,8 +65,9 @@
 										th:href="@{/bank/edit/{id}(id=${bank.idBank})}">Edit</a>
 								</div>
 								<div class="btn-group pull-right">
-									<a class="btn btn-sm btn-danger"
-										th:href="@{/bank/delete/{id}(id=${bank.idBank})}">Delete</a>
+									<form th:action="@{/bank/delete/{id}(id=${bank.idBank})}" th:object="${bank}" method="post">
+				                        <button type="submit" onClick="return confirm('Confirm ?')" class="btn btn-sm btn-danger">Delete</button>
+				                    </form>
 								</div>
 							</td>
 						</tr>
